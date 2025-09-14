@@ -30,9 +30,9 @@ app.post("/user", async (req, res) => {
 
 	try {
 		const info = await transporter.sendMail({
-			from: "From SpectV",
+			from: "From SpecV",
 			to: process.env.ADMIN_EMAIL,
-			subject: "Registration Details",
+			subject: "SpecV Registration Details",
 			text: `Name: ${FullName}\nEmail: ${Email}\nPhone: ${PhoneNumber}`,
 			html: `<p><b>Name:</b> ${FullName}</p>
              <p><b>Email:</b> ${Email}</p>
